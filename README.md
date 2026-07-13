@@ -26,9 +26,13 @@ An AI-powered web application that summarizes long text into concise and meaning
 - Hugging Face Inference API
 - PDF.js
 
-## 📷 Screenshots
+## 📸 Screenshots
 
-(Add screenshots here)
+### Home Page
+![Home](assets/home.png)
+
+### AI Generated Summary
+![Summary](assets/summary.png)
 
 ## 👨‍💻 Author
 
