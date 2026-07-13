@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AI Text Summarizer</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>🤖 AI Text Summarizer</h1>
+        <div class="theme-container">
+
+    <button id="themeBtn">
+        🌙 Dark Mode
+    </button>
+
+    </div>
+
+        <p class="subtitle">
+
+            Transform long paragraphs into short, meaningful summaries using Artificial Intelligence.
+
+        </p>
+
+        <!-- INPUT CARD -->
+         <div class="upload-section">
+
+    <label for="fileInput" class="upload-btn">
+
+        📂 Upload TXT / PDF
+
+    </label>
+
+    <input
+        type="file"
+        id="fileInput"
+        accept=".txt,.pdf"
+        hidden>
+
+    <p id="fileName">
+
+        No file selected
+
+    </p>
+
+    </div>
+
+        <div class="card">
+
+            <label>Enter Text</label>
+
+            <textarea id="inputText"
+                placeholder="Paste your paragraph here..."></textarea>
+
+            <div class="count">
+
+                <span id="charCount">
+
+                    Characters : 0
+
+                </span>
+
+                <span id="wordCount">
+
+                    Words : 0
+
+                </span>
+
+            </div>
+
+            <div class="summary-options">
+
+                <label for="summaryType">
+
+                    Summary Type
+
+                </label>
+
+                <select id="summaryType">
+
+                    <option value="short">
+
+                        📝 Short Summary
+
+                    </option>
+
+                    <option value="bullet">
+
+                        📌 Bullet Summary
+
+                    </option>
+
+                    <option value="simple">
+
+                        👦 Explain Like I'm 10
+
+                    </option>
+
+                    <option value="professional">
+
+                        💼 Professional Summary
+
+                    </option>
+
+                    <option value="keypoints">
+
+                        ⭐ Key Points
+
+                    </option>
+
+                </select>
+
+            </div>
+
+            <div class="buttons">
+
+                <button id="summarizeBtn">
+
+                    ✨ Summarize
+
+                </button>
+
+                <button id="clearBtn">
+
+                    🗑 Clear
+
+                </button>
+
+            </div>
+
+        </div>
+
+        <!-- LOADING -->
+
+        <div id="loading" class="loading">
+
+            ⏳ Generating AI Summary...
+
+        </div>
+
+        <!-- OUTPUT -->
+
+        <div class="card">
+
+            <h2>
+
+                AI Summary
+
+            </h2>
+
+            <div id="output" class="output">
+
+                Your summarized text will appear here...
+
+            </div>
+
+            <button id="copyBtn">
+
+                📋 Copy Summary
+
+            </button>
+
+        </div>
+
+        <!-- FOOTER -->
+
+        <div class="footer">
+
+            <p>
+
+                Developed using HTML, CSS, JavaScript & AI API ❤️
+
+            </p>
+
+        </div>
+
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
